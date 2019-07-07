@@ -1,0 +1,13 @@
+﻿<Window x:Class="CheckITs.Result"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CheckITs"
+        mc:Ignorable="d"
+        Title="Result" Height="700" Width="400">
+    <Grid>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Stroke="Black" VerticalAlignment="Top" Width="400"/>
+        <Label FontFamily ="Georgia" FontSize="30" Content="CheckIT" HorizontalAlignment="Left" Margin="132,0,0,0" VerticalAlignment="Top" Height="50" Width="129"/>
+    </Grid>
+</Window>

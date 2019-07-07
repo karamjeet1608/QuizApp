@@ -1,0 +1,31 @@
+﻿<Window x:Class="CheckITs.ManageQuestion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CheckITs"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="ManageQuestion" Height="700" Width="400">
+    <Grid>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Stroke="Black" VerticalAlignment="Top" Width="400"/>
+        <Label FontFamily ="Georgia" FontSize="30" Content="CheckIT" HorizontalAlignment="Left" Margin="132,0,0,0" VerticalAlignment="Top" Height="50" Width="129"/>
+        <Button Content="Add Question" HorizontalAlignment="Left" Margin="132,609,0,0" VerticalAlignment="Top" Width="99" Click="Button_Click" Height="30"/>
+        <ComboBox Name="cbx_TopicList" FontFamily ="Georgia" FontSize="16" HorizontalAlignment="Left" Margin="112,81,0,0" VerticalAlignment="Top" Width="256" Height="25" SelectionChanged="Cbx_TopicList_SelectionChanged"/>
+        <Label FontFamily ="Georgia" FontSize="16" Content="Select Topic" HorizontalAlignment="Left" Margin="10,81,0,0" VerticalAlignment="Top" Width="97"/>
+        <ListBox Name="QuestionList" HorizontalContentAlignment="Stretch" Margin="21,144,24,91" SelectionChanged="QuestionList_SelectionChanged">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="0,2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition  Width="10" SharedSizeGroup="Column1"/>
+                            <ColumnDefinition Width="Auto" SharedSizeGroup="Column2"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock FontFamily ="arial" FontSize="12" Grid.Column="0" Text="{Binding QuestionId}" />
+                        <TextBlock FontFamily ="arial" FontSize="12" Grid.Column="1" Text="{Binding QuestionTitle}" />
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>
