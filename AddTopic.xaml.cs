@@ -74,9 +74,16 @@ namespace CheckITs
             }
         }
 
-        private void LvUsers_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void TopicLists_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            var topic = new Topic();
+            topic = (Topic)TopicLists.SelectedItem;
+            string id = topic.TopicId;
+            MessageBox.Show(id);
 
+            var topicdetail = new TopicDetail(id);
+            topicdetail.Show();
+            this.Close();
         }
     }
 }

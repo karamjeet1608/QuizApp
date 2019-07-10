@@ -25,3 +25,8 @@ C:\Users\karam\source\repos\CheckITs\obj\Debug\CheckITs.pdb
 C:\Users\karam\source\repos\CheckITs\obj\Debug\CheckITs.csprojAssemblyReference.cache
 C:\Users\karam\source\repos\CheckITs\obj\Debug\QuestionDetail.g.cs
 C:\Users\karam\source\repos\CheckITs\obj\Debug\QuestionDetail.baml
+C:\Users\karam\source\repos\CheckITs\obj\Debug\TopicDetail.g.cs
+C:\Users\karam\source\repos\CheckITs\obj\Debug\TopicDetail.baml
+C:\Users\karam\source\repos\CheckITs\obj\Debug\CheckITs.test.resources
+C:\Users\karam\source\repos\CheckITs\obj\Debug\Student.g.cs
+C:\Users\karam\source\repos\CheckITs\obj\Debug\Student.baml

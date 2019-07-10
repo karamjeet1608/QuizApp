@@ -12,7 +12,7 @@
         <Label FontFamily ="Georgia" FontSize="30" Content="CheckIT" HorizontalAlignment="Left" Margin="132,0,0,0" VerticalAlignment="Top" Height="50" Width="129"/>
         <ComboBox Name="cbx_TopicList" FontFamily ="Georgia" FontSize="16" HorizontalAlignment="Left" Margin="122,81,0,0" VerticalAlignment="Top" Width="246" Height="25" SelectionChanged="Cbx_TopicList_SelectionChanged"/>
         <Label FontFamily ="Georgia" FontSize="16" Content="Select Topic" HorizontalAlignment="Left" Margin="10,81,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.611,0.464"/>
-        <Button Name="btn_options" Content="=" HorizontalAlignment="Left" Margin="348,10,0,0" VerticalAlignment="Top" Width="20" RenderTransformOrigin="-0.027,0.25" Click="Btn_options_Click"/>
+        <Button Name="btn_options" Content="=" HorizontalAlignment="Left" Margin="21,10,0,0" VerticalAlignment="Top" Width="20" RenderTransformOrigin="-0.027,0.25" Click="Btn_options_Click"/>
         <Button Name="btn_StartCheckIt" Content="Start CheckIt" HorizontalAlignment="Left" Margin="143,592,0,0" VerticalAlignment="Top" Width="118" Height="44" Click="Btn_StartCheckIt_Click"/>
         <ListBox Name="QuestionList" HorizontalContentAlignment="Stretch" Margin="21,136,24,110">
 			<ListBox.ItemTemplate>

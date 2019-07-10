@@ -21,10 +21,12 @@ namespace CheckITs
     /// </summary>
     public partial class AddQuestion : Window
     {
-        public AddQuestion()
+        public string topicid = "";
+        public AddQuestion(string val)
         {
             InitializeComponent();
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
+            topicid = val;
         }
 
         private void Btn_AddQuestion_Click(object sender, RoutedEventArgs e)
@@ -34,7 +36,7 @@ namespace CheckITs
                 var data = DbUtility.ReadXml<ObservableCollection<Question>>("Questions.xml");
                 var question = new ObservableCollection<Question>();
                 Question qs = new Question();
-                qs.TopicId = "text";
+                qs.TopicId = topicid;
                 XmlDocument doc = new XmlDocument();
                 doc.Load("Questions.xml");
                 int count = 1;
@@ -50,6 +52,9 @@ namespace CheckITs
                 qs.OptionC = OptionC.Text;
                 qs.OptionD = OptionD.Text;
                 qs.CorectionAnswer = CorrectAnswer.Text;
+                Random random = new Random();
+                var code =Convert.ToString( random.Next(999, 10000));
+                qs.QuestionCode = code;
                 {
                     data.Add(qs);
                     DbUtility.WriteXml<ObservableCollection<Question>>(data, "Questions.xml");

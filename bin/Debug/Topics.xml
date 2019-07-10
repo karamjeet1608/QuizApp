@@ -10,26 +10,22 @@
   </Topic>
   <Topic>
     <TopicId>3</TopicId>
-    <TopicTitle>Java Programming language</TopicTitle>
-  </Topic>
-  <Topic>
-    <TopicId>4</TopicId>
     <TopicTitle>TypeScript Fundamentals</TopicTitle>
   </Topic>
   <Topic>
-    <TopicId>5</TopicId>
+    <TopicId>4</TopicId>
     <TopicTitle>Information System</TopicTitle>
   </Topic>
   <Topic>
-    <TopicId>6</TopicId>
+    <TopicId>5</TopicId>
     <TopicTitle>Software Development Practises</TopicTitle>
   </Topic>
   <Topic>
-    <TopicId>7</TopicId>
-    <TopicTitle>Software Architecture and Design</TopicTitle>
+    <TopicId>6</TopicId>
+    <TopicTitle />
   </Topic>
   <Topic>
-    <TopicId>8</TopicId>
-    <TopicTitle>International Project Management</TopicTitle>
+    <TopicId>7</TopicId>
+    <TopicTitle />
   </Topic>
 </ArrayOfTopic>

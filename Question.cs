@@ -16,5 +16,6 @@ namespace CheckITs
         public string OptionC { get; set; }
         public string OptionD { get; set; }
         public string CorectionAnswer { get; set; }
+        public string QuestionCode { get; set; }
     }
 }

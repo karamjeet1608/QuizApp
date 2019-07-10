@@ -5,27 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CheckITs"
         mc:Ignorable="d"
+        Loaded="Window_Loaded"
         Title="QuestionDetail" Height="700" Width="400">
     <Grid>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Stroke="Black" VerticalAlignment="Top" Width="400"/>
         <Label FontFamily ="Georgia" FontSize="30" Content="CheckIT" HorizontalAlignment="Left" Margin="132,0,0,0" VerticalAlignment="Top" Height="50" Width="129"/>
-        <Label FontFamily ="Georgia" FontSize="16" Content="Topic Name:" HorizontalAlignment="Left" Margin="10,55,0,0" VerticalAlignment="Top" Width="106"/>
-        <StackPanel Name="stk_TopicName" HorizontalAlignment="Left" Height="28" Margin="116,55,0,0" VerticalAlignment="Top" Width="248">
-            <TextBlock FontFamily ="Georgia" FontSize="14" Text="{Binding Topic}" Height="28"></TextBlock>
+        <StackPanel Name="stk_TopicName" HorizontalAlignment="Left" Height="33" Margin="0,50,0,0" VerticalAlignment="Top" Width="392">
+            <Label FontFamily ="Georgia" FontSize="16" Content="Topic Name:" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Width="106"/>
+            <TextBlock FontFamily ="Georgia" FontSize="16" Text="TESTING" Height="25" Margin="116,-23,0,0"/>
         </StackPanel>
-        <Label FontFamily ="Georgia" FontSize="16" Content="Question:" HorizontalAlignment="Left" Margin="10,117,0,0" VerticalAlignment="Top"/>
-        <TextBox Name="Question" FontFamily ="Georgia" FontSize="16" HorizontalAlignment="Left" Height="62" Margin="94,123,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="279"/>
-        <Label Content="Option A:" FontFamily ="Georgia" FontSize="16" HorizontalAlignment="Left" Margin="10,246,0,0" VerticalAlignment="Top"/>
-        <Label Content="Option B:" FontFamily ="Georgia" FontSize="16" HorizontalAlignment="Left" Margin="10,315,0,0" VerticalAlignment="Top"/>
-        <TextBox Name="OptionA" FontFamily ="Georgia" FontSize="16" HorizontalAlignment="Left" Height="23" Margin="94,251,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="279"/>
-        <TextBox Name="OptionB" FontFamily ="Georgia" FontSize="16" HorizontalAlignment="Left" Height="22" Margin="94,321,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="279"/>
-        <Label FontFamily ="Georgia" FontSize="16" Content="Option C:" HorizontalAlignment="Left" Margin="10,381,0,0" VerticalAlignment="Top"/>
-        <Label FontFamily ="Georgia" FontSize="16" Content="Option D:" HorizontalAlignment="Left" Margin="10,456,0,0" VerticalAlignment="Top"/>
-        <TextBox Name="OptionC" FontFamily ="Georgia" FontSize="16" HorizontalAlignment="Left" Height="23" Margin="94,386,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="279"/>
-        <TextBox Name="OptionD" FontFamily ="Georgia" FontSize="16" HorizontalAlignment="Left" Height="23" Margin="94,456,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="279"/>
-        <Label FontFamily ="Georgia" FontSize="16" Content="Correct Option:" HorizontalAlignment="Left" Margin="27,536,0,0" VerticalAlignment="Top" Width="121"/>
-        <TextBox Name="CorrectAnswer" FontFamily ="Georgia" FontSize="16" HorizontalAlignment="Left" Height="23" Margin="163,536,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="142"/>
-        <Button Name="btn_UpdateQuestion" Content="Update Question" HorizontalAlignment="Left" Margin="27,604,0,0" VerticalAlignment="Top" Width="121" Click="Btn_UpdateQuestion_Click"/>
-        <Button Name="btn_Cancel" Content="Cancel" HorizontalAlignment="Left" Margin="230,604,0,0" VerticalAlignment="Top" Width="75" Click="Btn_Cancel_Click"/>
+        <StackPanel Name="stk_QuestionDetails" Margin="0,83,0,207">
+            <Label FontFamily ="Georgia" FontSize="16" Content="Question:" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Top"/>
+            <TextBox Name="Question" FontFamily ="Georgia" FontSize="16" HorizontalAlignment="Left" Height="62" TextWrapping="Wrap" Text="{Binding Path=QuestionTitle}" VerticalAlignment="Top" Margin="94,-32,0,0" Width="279"/>
+            <Label Content="Option A:" FontFamily ="Georgia" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50"/>
+            <TextBox Name="OptionA" FontFamily ="Georgia" FontSize="16" HorizontalAlignment="Left" Height="23" Margin="94,-75,0,0" TextWrapping="Wrap" Text="{Binding Path=OptionA}" VerticalAlignment="Top" Width="279"/>
+            <Label Content="Option B:" FontFamily ="Georgia" FontSize="16" HorizontalAlignment="Left" Margin="10,-30,0,0" VerticalAlignment="Top"/>
+            <TextBox Name="OptionB" FontFamily ="Georgia" FontSize="16" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="{Binding Path=OptionB}" VerticalAlignment="Top" Width="279" Margin="94,-25,0,0"/>
+            <Label FontFamily ="Georgia" FontSize="16" Content="Option C:" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="10,15,0,0"/>
+            <TextBox Name="OptionC" FontFamily ="Georgia" FontSize="16" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="{Binding Path=OptionC}" VerticalAlignment="Top" Width="279" Margin="94,-25,0,0"/>
+            <Label FontFamily ="Georgia" FontSize="16" Content="Option D:" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="10,15,0,0"/>
+            <TextBox Name="OptionD" FontFamily ="Georgia" FontSize="16" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="{Binding Path=OptionD}" VerticalAlignment="Top" Width="279" Margin="94,-25,0,0"/>
+            <Label FontFamily ="Georgia" FontSize="16" Content="Correct Option:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="121" Margin="10,15,0,0"/>
+            <TextBox Name="CorrectAnswer" FontFamily ="Georgia" FontSize="16" HorizontalAlignment="Left" Height="23"  TextWrapping="Wrap" Text="{Binding Path=CorectionAnswer}" VerticalAlignment="Top" Width="142" Margin="150,-25,0,0"/>
+            <TextBox Name="Questionid" FontFamily ="Georgia" FontSize="16" HorizontalAlignment="Left" Height="23"  TextWrapping="Wrap" Text="{Binding Path=QuestionId}" VerticalAlignment="Top" Width="142" Margin="150,15,0,0" Visibility="Hidden"/>
+        </StackPanel>
+        <Button Name="btn_UpdateQuestion" Content="Update Question" HorizontalAlignment="Left" Margin="27,589,0,0" VerticalAlignment="Top" Width="121" Click="Btn_UpdateQuestion_Click" Height="35"/>
+        <Button Name="btn_Cancel" Content="Cancel" HorizontalAlignment="Left" Margin="230,589,0,0" VerticalAlignment="Top" Width="120" Click="Btn_Cancel_Click" Height="35"/>
+        <Button FontFamily ="Georgia" FontSize="16"  Name="btn_DeleteQuestion" Content=":" FontWeight="ExtraBold" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top" Width="16" Click="Btn_DeleteQuestion_Click"/>
+
     </Grid>
 </Window>

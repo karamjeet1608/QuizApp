@@ -1,55 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<ArrayOfTask xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <TasksDependency>
-    <TaskId>1</TaskId>
-    <DependentTaskID>No Selection</DependentTaskID>
-  </TasksDependency>
-  <TasksDependency>
-    <TaskId>2</TaskId>
-    <DependentTaskID>No Selection</DependentTaskID>
-  </TasksDependency>
-  <TasksDependency>
-    <TaskId>3</TaskId>
-    <DependentTaskID>No Selection</DependentTaskID>
-  </TasksDependency>
-  <TasksDependency>
-    <TaskId>4</TaskId>
-    <DependentTaskID>No Selection</DependentTaskID>
-  </TasksDependency>
-  <TasksDependency>
-    <TaskId>5</TaskId>
-    <DependentTaskID>4</DependentTaskID>
-  </TasksDependency>
-  <TasksDependency>
-    <TaskId>6</TaskId>
-    <DependentTaskID>No Selection</DependentTaskID>
-  </TasksDependency>
-  <TasksDependency>
-    <TaskId>7</TaskId>
-    <DependentTaskID>6</DependentTaskID>
-  </TasksDependency>
-  <TasksDependency>
-    <TaskId>8</TaskId>
-    <DependentTaskID>No Selection</DependentTaskID>
-  </TasksDependency>
-  <TasksDependency>
-    <TaskId>9</TaskId>
-    <DependentTaskID>No Selection</DependentTaskID>
-  </TasksDependency>
-  <TasksDependency>
-    <TaskId>10</TaskId>
-    <DependentTaskID>No Selection</DependentTaskID>
-  </TasksDependency>
-  <TasksDependency>
-    <TaskId>11</TaskId>
-    <DependentTaskID>No Selection</DependentTaskID>
-  </TasksDependency>
-  <TasksDependency>
-    <TaskId>12</TaskId>
-    <DependentTaskID>No Selection</DependentTaskID>
-  </TasksDependency>
-  <TasksDependency>
-    <TaskId>12</TaskId>
-    <DependentTaskID>No Selection</DependentTaskID>
-  </TasksDependency>
-</ArrayOfTask>
+<?xml version="1.0"?>
+<ArrayOfQuestion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Question>
+    <TopicId>1</TopicId>
+    <QuestionId>1</QuestionId>
+    <QuestionTitle>Choosing the starting point or module at the begining?</QuestionTitle>
+    <OptionA>Suitability for task</OptionA>
+    <OptionB>Suitability for individualisation</OptionB>
+    <OptionC>Error tolerance</OptionC>
+    <OptionD>Self Descriptiveness</OptionD>
+    <CorectionAnswer>TextBox</CorectionAnswer>
+  </Question>
+</ArrayOfQuestion>

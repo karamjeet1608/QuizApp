@@ -15,7 +15,6 @@
             <TextBox Name="TopicName" FontFamily ="Georgia" FontSize="16" HorizontalAlignment="Left" Height="28" Margin="132,134,0,0" TextWrapping="NoWrap"  Text="" VerticalAlignment="Top" Width="240"/>
         </StackPanel>
         <Button Name="btn_AddTopic" Content="Add Topic" HorizontalAlignment="Left" Margin="132,180,0,0" VerticalAlignment="Top" Width="75" Click="Btn_AddTopic_Click" RenderTransformOrigin="0.347,1.1"/>
-        <Button Name="btn_Cancel" Content="Delete" HorizontalAlignment="Left" Margin="280,180,0,0" VerticalAlignment="Top" Width="75" Click="Btn_Cancel_Click"/>
         <Label FontFamily ="Georgia" FontSize="16" Content="Default Time:" HorizontalAlignment="Left" Margin="10,83,0,0" VerticalAlignment="Top" Width="109"/>
         <Label FontFamily ="Georgia" FontSize="16" Content="Minutes" HorizontalAlignment="Left" Margin="166,88,0,0" VerticalAlignment="Top" Height="28" Width="80"/>
         <Label FontFamily ="Georgia" FontSize="16" FontWeight="ExtraBold"  Content=":" HorizontalAlignment="Left" Margin="231,88,0,0" VerticalAlignment="Top"/>
@@ -29,7 +28,7 @@
                 </GridView>
             </ListView.View>
         </ListView>-->
-        <ListBox Name="TopicLists" HorizontalContentAlignment="Stretch" Margin="21,215,24,35">
+        <ListBox Name="TopicLists" HorizontalContentAlignment="Stretch" Margin="21,215,24,35" SelectionChanged="TopicLists_SelectionChanged">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Grid Margin="0,2">

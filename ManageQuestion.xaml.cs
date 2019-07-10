@@ -43,7 +43,9 @@ namespace CheckITs
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var addquestion = new AddQuestion();
+            comboselecteditemId = cbx_TopicList.SelectedIndex + 1;
+            string val = comboselecteditemId.ToString();
+            var addquestion = new AddQuestion(val);
             addquestion.Show();
             this.Close();
 

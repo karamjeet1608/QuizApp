@@ -41,6 +41,8 @@ namespace CheckITs
                 data.Add(x.SelectSingleNode("TopicTitle").InnerText);
             }
             cbx_TopicList.ItemsSource = data;
+            cbx_TopicList.SelectedIndex = 0;
+
         }
 
         private void Btn_options_Click(object sender, RoutedEventArgs e)
@@ -63,8 +65,33 @@ namespace CheckITs
 
         private void Btn_StartCheckIt_Click(object sender, RoutedEventArgs e)
         {
+            string val = "";
+            var question = new Question();
+            question = (Question)QuestionList.SelectedItem;
+            string id = question.QuestionId;
+            MessageBox.Show(id);
 
+            XmlDocument docu = new XmlDocument();
+            docu.Load("Questions.xml");
+            foreach (XmlNode x in docu.SelectNodes("ArrayOfQuestion/Question"))
+            if (x.SelectSingleNode("QuestionId").InnerText == id)
+            {
+                     val = x.SelectSingleNode("QuestionCode").InnerText;
+            }
+            MessageBoxResult result = System.Windows.MessageBox.Show("The Question Code is:  " + val+ " Do you want to start the question?", "Start Question", MessageBoxButton.YesNo);
+            switch (result)
+            {
+                case MessageBoxResult.Yes:
+                   
+                    var studentpage = new Student(val);
+                    studentpage.Show();
+                    break;
+                case MessageBoxResult.No:
+                    break;
+            }
         }
     }
-
 }
+
+
+
